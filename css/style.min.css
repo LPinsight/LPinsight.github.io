@@ -1,0 +1,196 @@
+/* $blau: rgb(75, 215, 255) */
+/* $blau: rgb(152, 232, 255) */
+/* $blau: rgb(75, 215, 255) */
+/* $blau: rgb(75, 215, 255) */
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: lightgrey; }
+
+header {
+  width: 100%;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #4c747f;
+  border-bottom: 5px solid grey;
+  color: white; }
+  header img {
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    margin: 10px; }
+
+/* Navigation Normal */
+/* $blau: rgb(75, 215, 255) */
+/* $blau: rgb(152, 232, 255) */
+/* $blau: rgb(75, 215, 255) */
+/* $blau: rgb(75, 215, 255) */
+nav#normal {
+  background-color: #4c747f;
+  width: 100%;
+  height: 4.35rem;
+  margin: 0;
+  padding: 0;
+  border-bottom: 5px solid grey;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  text-align: center;
+  display: inline-block; }
+  nav#normal ul {
+    padding: 0;
+    margin: 0;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    display: inline-block; }
+    nav#normal ul li:hover > a {
+      background: #266b7f; }
+    nav#normal ul li:hover > ul {
+      max-height: 700px; }
+    nav#normal ul li {
+      margin: 0;
+      padding: 0;
+      float: left;
+      list-style: none;
+      position: relative;
+      -webkit-transition: all 300ms;
+      transition: all 300ms; }
+      nav#normal ul li a {
+        display: inline-block;
+        padding: 1rem 1.5rem;
+        float: left;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        margin: 0 1px 0 0;
+        text-decoration: none;
+        background: #3caccc;
+        font-weight: 300;
+        -webkit-transition: all 300ms;
+        transition: all 300ms; }
+      nav#normal ul li ul {
+        overflow: hidden;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        -webkit-transition: all 300ms;
+        transition: all 300ms;
+        max-height: 0; }
+        nav#normal ul li ul li:last-child {
+          border-bottom: none; }
+        nav#normal ul li ul li {
+          border-bottom: 1px solid #4c747f;
+          width: 100%; }
+          nav#normal ul li ul li a {
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0; }
+
+@media screen and (max-width: 700px) {
+  nav#normal {
+    display: none; } }
+/* Navigation Mobile */
+/* $blau: rgb(75, 215, 255) */
+/* $blau: rgb(152, 232, 255) */
+/* $blau: rgb(75, 215, 255) */
+/* $blau: rgb(75, 215, 255) */
+nav#mobile:hover > ul {
+  max-height: 800px; }
+
+nav#mobile {
+  background-color: #4c747f;
+  width: 100%;
+  min-height: 4.35rem;
+  height: auto;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border-bottom: 5px solid grey;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+  text-align: center;
+  display: inline-block;
+  display: none; }
+  nav#mobile #menu {
+    padding: 1rem 5%;
+    float: left;
+    width: 90%;
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 300;
+    -webkit-transition: all 500ms;
+    transition: all 500ms; }
+  nav#mobile ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    max-height: 0;
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+    overflow: hidden;
+    float: left; }
+    nav#mobile ul li:hover > a {
+      background: #266b7f; }
+    nav#mobile ul li:hover > ul {
+      max-height: 500px; }
+    nav#mobile ul li {
+      margin: 0;
+      padding: 0;
+      float: left;
+      width: 100%;
+      list-style: none;
+      position: relative;
+      -webkit-transition: all 500ms;
+      transition: all 500ms; }
+      nav#mobile ul li a {
+        display: inline-block;
+        padding: 1rem 5%;
+        float: left;
+        width: 90%;
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+        margin: 0 1px 0 0;
+        text-decoration: none;
+        background: #3caccc;
+        font-weight: 300;
+        -webkit-transition: all 300ms;
+        transition: all 300ms; }
+      nav#mobile ul li ul {
+        width: 100%;
+        -webkit-transition: all 500ms;
+        transition: all 500ms;
+        max-height: 0;
+        overflow: hidden;
+        float: left; }
+        nav#mobile ul li ul li:last-child {
+          border-bottom: none; }
+        nav#mobile ul li ul li {
+          display: block;
+          float: left;
+          -webkit-transition: all 500ms;
+          transition: all 500ms; }
+          nav#mobile ul li ul li a {
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            background: #4bd7ff; }
+
+@media screen and (max-width: 700px) {
+  nav#mobile {
+    display: block; } }
