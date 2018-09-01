@@ -1,7 +1,3 @@
-/* $blau: rgb(75, 215, 255) */
-/* $blau: rgb(152, 232, 255) */
-/* $blau: rgb(75, 215, 255) */
-/* $blau: rgb(75, 215, 255) */
 body, html {
   width: 100%;
   height: 100%;
@@ -30,17 +26,13 @@ header {
     height: 40px;
     width: 40px;
     padding: 0;
-    margin: 10px; }
+    margin: 10px;
+    border-radius: 40px; }
 
-/* Navigation Normal */
-/* $blau: rgb(75, 215, 255) */
-/* $blau: rgb(152, 232, 255) */
-/* $blau: rgb(75, 215, 255) */
-/* $blau: rgb(75, 215, 255) */
 nav#normal {
   background-color: #4c747f;
   width: 100%;
-  height: 4.35rem;
+  height: 4.3rem;
   margin: 0;
   padding: 0;
   border-bottom: 5px solid grey;
@@ -101,18 +93,13 @@ nav#normal {
 @media screen and (max-width: 700px) {
   nav#normal {
     display: none; } }
-/* Navigation Mobile */
-/* $blau: rgb(75, 215, 255) */
-/* $blau: rgb(152, 232, 255) */
-/* $blau: rgb(75, 215, 255) */
-/* $blau: rgb(75, 215, 255) */
 nav#mobile:hover > ul {
   max-height: 800px; }
 
 nav#mobile {
   background-color: #4c747f;
   width: 100%;
-  min-height: 4.35rem;
+  min-height: 4.3rem;
   height: auto;
   overflow: hidden;
   margin: 0;
@@ -194,3 +181,74 @@ nav#mobile {
 @media screen and (max-width: 700px) {
   nav#mobile {
     display: block; } }
+article#Projekte {
+  width: 90%;
+  min-height: 50%;
+  height: auto;
+  overflow: hidden;
+  margin: 10px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*  align-items: center */
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  article#Projekte article.projekte {
+    width: 20rem;
+    background: #4c747f;
+    margin: 10px; }
+    article#Projekte article.projekte section.header:hover {
+      background: #266b7f;
+      cursor: pointer; }
+    article#Projekte article.projekte section.header {
+      width: 100%;
+      height: 6rem;
+      border-bottom: 5px solid grey; }
+      article#Projekte article.projekte section.header a {
+        width: 100%;
+        height: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        text-decoration: none;
+        color: white; }
+        article#Projekte article.projekte section.header a img {
+          width: 10rem; }
+        article#Projekte article.projekte section.header a h1 {
+          font-size: 3rem;
+          padding: 0;
+          margin: 10px; }
+    article#Projekte article.projekte section.stats {
+      width: 90%;
+      height: auto;
+      overflow: hidden;
+      margin: 10px 5%; }
+      article#Projekte article.projekte section.stats table {
+        text-align: center;
+        color: white;
+        width: 100%;
+        font-size: 1.5rem; }
+        article#Projekte article.projekte section.stats table tr {
+          text-align: center; }
+          article#Projekte article.projekte section.stats table tr td {
+            text-align: center;
+            width: 50%; }
+    article#Projekte article.projekte section.beschreibung {
+      width: 100%;
+      height: auto;
+      overflow: hidden; }
+      article#Projekte article.projekte section.beschreibung p {
+        font-size: 1.5rem;
+        width: 90%;
+        margin: 10px 5%;
+        text-align: center;
+        color: white; }
